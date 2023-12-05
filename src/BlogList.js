@@ -8,7 +8,7 @@ export default class BlogList extends React.Component {
 
 
     componentDidMount() {
-      axios.get("http://127.0.0.1:3001/blog/")
+      axios.get("http://192.168.1.12:3000/blog/")
         .then(res => {
           const blogs = res.data.blogs;
           this.setState({blogs});
